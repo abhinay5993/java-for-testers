@@ -120,7 +120,7 @@
 						<include>**/*TestSuite.java</include>
 					</includes>
 					<suiteXmlFiles>
-						<defaultSuiteXmlFile></defaultSuiteXmlFile>
+						<defaultSuiteXmlFile>src/test/resources/testSuites/TestNgTCs_Executions_TestSuite.xml</defaultSuiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

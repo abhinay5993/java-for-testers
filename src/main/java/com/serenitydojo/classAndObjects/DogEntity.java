@@ -8,6 +8,8 @@ package com.serenitydojo.classAndObjects;
 public class DogEntity extends AbstractPetEntity {
 	
 	private String favoriteToy;
+	private int age;
+	private String name;
 	private static final String DOG_NOISE = "Woof";
     private boolean isFed; 
 
@@ -55,6 +57,20 @@ public class DogEntity extends AbstractPetEntity {
 	@Override
 	public String play() {
 		return "plays with bone";
+	}
+
+	/**
+	 * @return the age
+	 */
+	public int getAge() {
+		return super.getAge();
+	}
+
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return super.getName();
 	}
 
 }

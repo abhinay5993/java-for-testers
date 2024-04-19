@@ -7,6 +7,8 @@ package com.serenitydojo.classAndObjects;
  */
 public class HampsterEntity extends AbstractPetEntity {
 	
+	private String favoriteGame;
+	
 	public HampsterEntity(String name, int age,String favoriteGame) {
 		super(name, age);
 	}
@@ -14,6 +16,20 @@ public class HampsterEntity extends AbstractPetEntity {
 	@Override
 	public String play() {
 		return "runs in wheel";
+	}
+
+	/**
+	 * @return the favoriteGame
+	 */
+	public String getFavoriteGame() {
+		return favoriteGame;
+	}
+
+	/**
+	 * @param favoriteGame the favoriteGame to set
+	 */
+	public void setFavoriteGame(String favoriteGame) {
+		this.favoriteGame = favoriteGame;
 	}
 
 }
