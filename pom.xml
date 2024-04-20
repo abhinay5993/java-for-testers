@@ -7,14 +7,14 @@
 
 	<groupId>com.serenitydojo</groupId>
 	<artifactId>java-for-testers</artifactId>
-	<version>v1.0.6</version>
+	<version>v1.0.7</version>
 	<packaging>jar</packaging>
 	<name>java-for-testers</name>
 	<url>https://expansion.serenity-dojo.com/courses/take/java-for-testers-and-test-automation</url>
 
 	<distributionManagement>
 		<repository>
-			<id>github</id>
+			<id>java-for-SDET</id>
 			<name>GitHub abhinay5993 Java For SDET</name>
 			<url>https://maven.pkg.github.com/abhinay5993/java-for-testers</url>
 		</repository>
