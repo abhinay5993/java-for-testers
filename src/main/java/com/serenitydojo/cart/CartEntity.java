@@ -29,16 +29,20 @@ public class CartEntity {
 	}
 
 	public ItemEntity getItemWithName(String expectedItemName) throws NoSuchItemException, ItemNotReadyException {
-	if (random.nextBoolean()) {
-	throw new ItemNotReadyException("Item with name '" + expectedItemName + "' not ready yet");
-	}
+		try {
+			if (random.nextBoolean()) {
+				throw new ItemNotReadyException("Item with name '" + expectedItemName + "' not ready yet");
+			}
 
-	for (ItemEntity item : contents) {
-		if (item.isCalled(expectedItemName)) {
-				return item;
+			for (ItemEntity item : contents) {
+				if (item.isCalled(expectedItemName)) {
+					return item;
+				}
+			}
+		} catch (Exception e) {
+			System.out.println("\nException : " + e);
 		}
-	}
-	throw new NoSuchItemException("No such item with name " + expectedItemName);
+		throw new NoSuchItemException("No such item with name " + expectedItemName);
 	}
 
 }
