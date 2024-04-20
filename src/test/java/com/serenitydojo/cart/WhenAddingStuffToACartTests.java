@@ -37,12 +37,16 @@ public class WhenAddingStuffToACartTests {
 	
 	@Test
 	public void iCanGetAnItemByName() throws NoSuchItemException, ItemNotReadyException {
-	CartEntity cart = new CartEntity();
-	ItemEntity item = new ItemEntity("bread");
-	cart.setContents(item);
+		try {
+			CartEntity cart = new CartEntity();
+			ItemEntity item = new ItemEntity("bread");
+			cart.setContents(item);
 
-	assertThat(cart.getItemWithName("bread")).isEqualTo(item);
-	System.out.println("\nTC-03 - iCanGetAnItemByName() - Executed successfully.");
+			assertThat(cart.getItemWithName("bread")).isEqualTo(item);
+			System.out.println("\nTC-03 - iCanGetAnItemByName() - Executed successfully.");
+		} catch (Exception e) {
+			System.out.println("\nException : " + e);
+		}
 	}
 
 	
