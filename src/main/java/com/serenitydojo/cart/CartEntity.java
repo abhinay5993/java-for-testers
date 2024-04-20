@@ -30,7 +30,7 @@ public class CartEntity {
 
 	public ItemEntity getItemWithName(String expectedItemName) throws NoSuchItemException, ItemNotReadyException {
 		try {
-			if (random.nextBoolean()) {
+			if (!random.nextBoolean()) {
 				throw new ItemNotReadyException("Item with name '" + expectedItemName + "' not ready yet");
 			}
 
