@@ -8,12 +8,13 @@
 	<groupId>com.serenitydojo</groupId>
 	<artifactId>java-for-testers</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>java-for-testers</name>
-	<url>https://www.serenity-dojo.com</url>
+	<url>https://expansion.serenity-dojo.com/courses/take/java-for-testers-and-test-automation</url>
 
 	<distributionManagement>
 		<repository>
-			<id>github</id>
+			<id>github-java8-SDET</id>
 			<name>GitHub abhinay5993 Java For SDET</name>
 			<url>https://maven.pkg.github.com/abhinay5993/java-for-testers</url>
 		</repository>
@@ -29,8 +30,7 @@
 
 	<scm>
 		<connection>scm:git:git://github.com/abhinay5993/java-for-testers.git</connection>
-		<developerConnection>
-			scm:git:https://github.com/abhinay5993/java-for-testers.git</developerConnection>
+		<developerConnection>scm:git:https://github.com/abhinay5993/java-for-testers.git</developerConnection>
 		<url>https://github.com/abhinay5993/java-for-testers</url>
 		<tag>java-for-SDET-autodeployed-v</tag>
 	</scm>
